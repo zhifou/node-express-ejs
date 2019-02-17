@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" rev="stylesheet" href="http://www.elongstatic.com/web/common/css/new2015.min.css?t=201611020209" type="text/css" media="all" />
+    <link rel="stylesheet" href="http://www.elongstatic.com/common/css/EL_common.css?t=20161208141950" type="text/css">
+    <link rel="stylesheet" href="../flight/dist/css/myelong2013_f.css">
+    <style>
+        .goLogisticsInformation{
+            color:#336acc;
+            text-decoration: underline;
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+        }
+        .goLogisticsInformation-info{
+            /*position: absolute;*/
+            /*width: 300px;*/
+            background: #fff;
+            /*top: 30px;*/
+            /*left: -26px;*/
+            /*border: 1px solid #d0d0d0;*/
+            color: #888;
+            /*padding: 10px;*/
+            box-sizing: border-box;
+        }
+        .error-info-gologostics{
+            color: #555;
+        }
+
+
+        .result-list {
+            position: relative;
+            background-color: #fff;
+            overflow: hidden;
+        }
+        .result-list .xian{
+            position: absolute;
+            height: 100%;
+            width: 2px;
+            background: #ccc;
+            top: 0;
+            left: 8px;
+            margin-top: 10px;
+        }
+
+        .result-list dl {
+            width: 100%;
+            display: -webkit-box;
+            -webkit-box-align: center;
+            margin: 0;
+            padding: 2px;
+            position: relative;
+        }
+        .result-list dl:last-child span{
+            position: absolute;
+            width: 12px;
+            height: 100%;
+            background: #fff;
+            z-index: 1;
+            top: 17px;
+            left: 3px;
+        }
+
+        .result-list dl.first {
+            /*padding-top: 20px;*/
+        }
+        .result-list dl.first dt {
+            margin-top: 20px;
+            position: absolute;
+            z-index: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 16px;
+            background: #ffbebe;
+            left: 0px;
+            top: -14px;
+        }
+        .result-list dl.first dt span{
+            position: absolute;
+            z-index: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            background: #f55;
+            top: 3px;
+            left: 3px;
+        }
+
+        .result-list dt{
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #ccc;
+            border-radius: 10px;
+            left: 4px;
+            top: 7px;
+        }
+
+
+        .result-list dd {
+            margin: 0;
+            padding: 0 10px 0 20px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        .result-list .first .desc{
+            /*color: #333;*/
+        }
+        .result-list .time{
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+<div class="rightMain" id="orderinfo">
+    <div class="MEcrumbs">
+        <a href="http://my.elong.com/flight/flightorder_cn.html?rnd=1861483942473352">机票订单</a>&nbsp;&gt;&nbsp;<em>订单详细</em>
+    </div>
+    <div class="detailTop f-detailTop clx" id="summaryRegion">
+        <ul class="price_con clx">
+            <li class="l1">
+
+                总金额：<span class="price"><em>¥</em>790.00</span></li>
+            <li class="l2" style="width: 210px"><span class="s1">
+            票价：&nbsp;¥590</span>
+            <span class="s1">
+                税费：&nbsp;¥190</span>
+               <span class="s1">
+                     快递费：&nbsp;¥10&nbsp;
+               </span>
+            </li>
+            <li class="l2" style="width: 210px">
+            </li>
+        </ul>
+        <p class="mb15">
+        <span class="bold">
+            订单号：100147649
+        </span>
+            <span class="l_black ml5">(预订日期：2017-01-07 06:02:36)</span></p>
+        <p class="mb15" method="orderstatus" data-asyn="0">
+        <span s="CANCEL">
+            订单状态：订单已取消
+        </span>
+        </p>
+    </div>
+    <div class="detailTopBbott"></div>
+    <div class="f-detailCon clx" id="passengerRegion">
+        <div class="f-con-div">
+            <h2>
+                北京<span>→</span>武汉&nbsp;
+                2017年01月17日
+            </h2>
+            <table class="f-goto">
+                <tbody>
+                <tr>
+                    <td width="32" class="td1">
+                        <span class="icon_airline Airlines_CZ"></span>
+                    </td>
+                    <td width="305px" class="td2">
+                        中国南方航空股份有限公司&nbsp;CZ6605
+                        <br>
+                        &nbsp;机型 321
+
+                    </td>
+                    <td class="td3">
+                        <p class="time">
+                            09:10</p>
+                        首都国际机场&nbsp;T2
+                    </td>
+                    <td class="td4"></td>
+                    <td class="td5">
+                        <p class="time">
+                            11:30
+
+                        </p>
+
+                        天河国际机场&nbsp;
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="f-table1">
+                <tbody>
+                <tr class="title">
+                    <td>
+                        乘机人
+                    </td>
+                    <td>
+                        证件
+                    </td>
+                    <td>
+                        生日
+                    </td>
+                    <td>
+                        购买保险
+                    </td>
+                    <td>
+                        电子票号
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+			                    <span class="t14 bold">
+                                葛信伟测试
+			                    </span>(成人)
+                    </td>
+                    <td>
+                        护照:&nbsp;545****35
+                    </td>
+                    <td>
+                        1990-09-21
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        --
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div>
+                <ul class="f-tab clx">
+                    <li method="refund" class="cur" index="0">
+                        成人退改签
+                    </li>
+                </ul>
+                <p class="f-tab-bottom">
+                </p>
+                <div class="refundInfo">
+                    <div class="refundInfo_0">
+                        <table class="f-table2">
+                            <tbody>
+                            <tr>
+                                <td class="title">退票规定</td>
+                                <td>不得退票。</td>
+                            </tr>
+                            <tr>
+                                <td class="title">改期规定</td>
+                                <td>不得更改。</td>
+                            </tr>
+                            <tr>
+                                <td class="title">签转规定</td>
+                                <td>不得签转。</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="border-fg">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br> <br>
+        <h3><span>联系人信息</span></h3>
+        <div class="f-con-div2"> <span class="name">姓名：葛信伟测试</span>
+            <span style="display: inline-block;width: 240px;">电话：152****0000</span>
+        </div>
+        <br> <br>	<h3><span>发票信息</span></h3>
+        <div class="f-con-div2" id="invoiceRegion">
+            不需要
+        </div>
+        <br> <br>
+        <h3><span>配送信息</span></h3>
+        <div class="f-con-div2" id="deliveryRegion">
+            <p class="p1">
+                快递上门：北京北京朝阳区酒仙桥中路</p>
+            <p>配送费：
+                ￥10
+            </p>
+            <p class="p1">
+	        <span class="s1">
+	            收件人姓名：葛信伟
+	        </span>
+                收件人电话：152
+                ****0606
+            </p>
+            <div class="p1">
+                预计送达日期：2017-01-22
+                <span class="l_black ml5">
+                        （航班起飞后5日送达，节假日顺延）
+                </span>
+                <div class="goLogisticsInformation">
+                    <span class="up-border"></span>
+                    查看物流信息
+                </div>
+            </div>
+        </div>
+        <br> <br>
+        <h3><span class="paymentInfo" orderno="100147649">支付信息</span></h3>
+        <div class="f-con-div2"></div>
+        <div class="continuePay" style="display:none;" status="1">
+            <a class="f-btn4 mr20" method="GoPaying" href="javascript:void(0);">继续支付</a>
+        </div>
+        <br> <br>        </div>
+    <div id="contrastRegion" class="flight_ticket"></div>
+    <div class="myFun">
+        <a href="http://my.elong.com/flight/jorderdetail_100147649_cn.html#?rnd=1281483942544420" onclick="javascript:window.print()"><span class="dy"></span>
+            打印当前页</a>
+    </div>
+    <div class="sbmit" id="operateRegion">
+
+    </div>
+</div>
+</body>
+<script data-main="../flight/src/js/order/orderdetail1.js" src="http://m.elongstatic.com/web/flight/common/2016/11/v1/js/lib/require.js?20161208141950"></script>
+</html>

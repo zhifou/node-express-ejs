@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>订单填写页</title>
+    <meta name="keywords" content="机票,机票查询,飞机票,飞机票查询,特价机票,打折机票,机票预订,订机票" />
+    <meta name="description" content="艺龙网提供国内机票查询预订服务，2分钟快速出票，为超过8000万顾客成功出票。机票预订，找特价机票、打折飞机票、查询航班信息，网上选座，就用艺龙旅行网。" />
+    <script type="text/javascript">var tjObj_rt = new Date();</script>
+    <link rel="icon" href="http://www.elongstatic.com/common/pic/favicon.ico?t=201611020209" type="image/x-icon" />
+    <link rel="stylesheet" rev="stylesheet" href="http://www.elongstatic.com/web/common/css/new2015.min.css?t=201611020209" type="text/css" media="all" />
+    <link rel="stylesheet" href="http://www.elongstatic.com/common/css/EL_common.css?t=20161208141950" type="text/css">
+    <link rel="stylesheet" href="../flight/src/css/order.css" type="text/css">
+</head>
+<body>
+    <script type="text/javascript">
+        // var obj = {
+        //     "message": "",
+        //     "status": "",
+        //     "success": true,
+        //     "value": {
+        //         "orderRestRoomViewInfo": null,
+        //         "orderXpromotionViewModels": [
+        //             {
+        //                 "changeEable": false,
+        //                 "des": "1、保险名称：航空意外险<br />2、份数限制：购买上限1份；<br />3、保险有效期：指被保险人每次以乘客身份，乘坐电子保单载明的合法商业运营的客运飞机班次，并遵守承运人关于安全乘坐的规定，自持有效机票检票并进入所乘客运飞机客舱时起至抵达机票载明的终点离开所乘客运飞机客舱的期间内遭受意外伤害所导致的保险责任；<br />4、保险费：30元/份；<br />5、保额：最高260万元；<br />6、年龄：出生30天至90周岁；",
+        //                 "id": "0",
+        //                 "legIndex": 0,
+        //                 "originalPrice": 30,
+        //                 "promotionPrice": 30,
+        //                 "promotionXProductType": "Insurance",
+        //                 "selected": true,
+        //                 "subTitle": "",
+        //                 "title": "航空意外险"
+        //             }
+        //         ]
+        //     }
+        // };
+        //
+        // var xpromotion_obj = {
+        //     values : []
+        // };
+        // function dataEach(fn){
+        //     for( var i=0,len=obj.value.orderXpromotionViewModels.length; i<len; i++ ){
+        //         var elem = obj.value.orderXpromotionViewModels[i],
+        //             legIndex = elem.legIndex;
+        //
+        //         if(!!fn) fn(elem,legIndex);
+        //     };
+        // };
+        // dataEach(function(elem,legIndex){
+        //     xpromotion_obj.values[legIndex] = {
+        //         dataList : []
+        //     };
+        // });
+        // dataEach(function(elem,legIndex){
+        //     if( legIndex == 0 ){
+        //         xpromotion_obj.values[legIndex].isState = legIndex;
+        //         xpromotion_obj.values[legIndex].dataList.push(elem);
+        //     };
+        //     if( legIndex == 1 ){
+        //         xpromotion_obj.values[legIndex].isState = legIndex;
+        //         xpromotion_obj.values[legIndex].dataList.push(elem);
+        //     };
+        // });
+        //
+        // console.log( xpromotion_obj.values );
+    </script>
+
+    <div class="header">
+        <a class="logo" href="http://flight.elong.com" title="艺龙旅行网">艺龙旅行网</a>
+        <ul class="step">
+            <li class="step-item action"><span class="step-img"></span>填写</li>
+            <li class="step-item"><span class="step-img"></span>支付</li>
+            <li class="step-item"><span class="step-img"></span>完成</li>
+        </ul>
+    </div>
+
+    <div data-module="tips"></div>
+
+    <div class="main">
+        <div class="main-header">
+            <h2 class="main-header-title">
+            填写订单
+        </h2>
+        </div>
+        <div class="main-body">
+
+
+            <div class="main-body-info">
+                <!--航班信息 begin-->
+                <ul class="flightInfo">
+
+
+
+                    <li class="flightInfo-item">
+                        <span>北京</span>
+                        <em>--&gt;</em>
+                        <span>上海</span>
+                        <span class="ml10 mr10">12月10日</span>
+                        <span class="pl10">¥<span class="flight-price">529</span></span>
+                        <span class="tax ml5" method="tdMore">4.30折经济舱</span>
+
+                    </li>
+                    <li class="flightInfo-item">
+                        <span class="filightInfo-icon  Airlines_CA">
+                    </span>
+                        <span>
+                        中国国航 CA1883 &nbsp; 机型330
+                    </span>
+                        <span class="ml20">20:20&nbsp;首都国际机场&nbsp;T3</span>
+                        <em>--</em>
+                        <span>&nbsp;22:35&nbsp;浦东国际机场&nbsp;T2</span>
+                        <span class="flightInfo-feeText ml20" data-dos="0" data-dts="50">税费</span>
+                        <span class="mr20">¥50</span>
+                        <span class="flightInfo-rule" data-name="经济舱(S)" data-edn="不得签转。" data-rfn="起飞（含）前需收取票面价50％的退票费，起飞后不得退票。" data-rrn="起飞（含）前同等舱位更改需收取票面价30％的更改费，起飞后需收取票面价50％的更改费。改期费与票价差额同时发生时，两者需同时收取。" data-t="allowed" data-rmk="">退改规则</span>
+                    </li>
+
+
+                </ul>
+                <!--航班信息 end-->
+
+                <a class="againSelect" href="/jbook/bjs-sha?departdate=2016-12-10&seatlevel=y&refresh=1">
+        重选航班
+        <i class="againSelect-icon"></i>
+    </a>
+            </div>
+            <div class="main-body-content">
+                <div class="main-body-content-header">
+                    填写预订信息
+                </div>
+                <div data-module="passenger">
+                    <!--常用乘客 begin-->
+                    <div class="oftenPassengerWrap">
+
+                    </div>
+                    <!--常用乘客 end-->
+
+                    <!--乘客信息 begin-->
+                    <div class="passengerWarp">
+
+                    </div>
+                    <!--乘客信息 end-->
+
+                    <a class="passengerAddButton">增加乘客</a>
+                </div>
+
+                <!--联系方式 begin-->
+                <div class="linkMethod">
+                    <span>联系手机：</span>
+                    <input class="linkMethod-phone" maxlength="11" type="text">
+                    <span class="ml15">Email：</span>
+                    <input class="linkMethod-email" maxlength="50" type="text">
+                </div>
+                <!--联系方式 end-->
+
+                <!--贵宾休息室 begin-->
+                <div class="vipLoungeWrap">
+
+                </div>
+                <!--贵宾休息室 end-->
+
+                <!--报销凭证 begin-->
+                <div data-module="invoice">
+                </div>
+                <!--报销凭证 end-->
+                <div data-module="xpromotion">
+
+                </div>
+
+                <!--应付金额 begin-->
+                <div class="amount">
+                    <span>应付金额：¥ </span>
+                    <span class="amount-value"></span>
+                </div>
+                <!--应付金额 end-->
+
+                <!--条款 begin-->
+                <div class="article">
+                    <span>条款和限制：</span>
+                    <a href="http://promotion.elong.com/flight/notice/TermExpensive.html" target="_blank">关于贵重物品托运及防欺诈信息的公告
+                        </a>
+                    <span>、</span>
+                    <a href="http://promotion.elong.com/flight/notice/TermBattery.html" target="_blank">关于民航乘客携带锂电池以及危险品乘机的限制</a>
+                    <span>、</span>
+                    <a href="http://promotion.elong.com/flight/insurance/pingan.html" target="_blank">航空意外险细则</a>
+                    </p>
+                </div>
+                <!--条款 end-->
+            </div>
+        </div>
+        <div class="main-body-footer">
+            <input type="button" class="orderSubmit" value="同意以上协议条款，去核对" />
+        </div>
+
+    </div>
+
+    <div id="m_contentend" style="z-index: 200;">
+    </div>
+    <script type="text/javascript">
+        var FillOrderController = {
+            productViewInfo: {
+                "cacheKey": "00f4fdynWIk6XZJmX1U",
+                "dateRange": ["2016-12-09", "2016-12-10"],
+                "legs": [{
+                    "cabs": [{
+                        "cab": "S",
+                        "chl": 2,
+                        "disc": 0.43,
+                        "fno": "TouristClassType",
+                        "fnoName": "\u7ECF\u6D4E\u8231",
+                        "isfreepkg": false,
+                        "isps": false,
+                        "mchl": 0,
+                        "oprice": 529,
+                        "pkgs": [],
+                        "poid": "NONE",
+                        "price": 529,
+                        "psdt": "2016-12-09",
+                        "ptype": [0],
+                        "sale": {
+                            "ds": "\u5546\u52A1\u4F18\u9009\u673A\u7968\u670D\u52A1\u6709\u4FDD\u969C\uFF0C\u6211\u4EEC\u63D0\u4F9B\uFF1A<br\/>\u5FEB\u901F\u51FA\u7968\uFF1B<br\/>\u63D0\u4F9B\u884C\u7A0B\u5355\uFF0C\u62A5\u9500\u65E0\u5FE7\uFF1B<br\/>\u670D\u52A1\u4F18\u5148\uFF1A\u5C0A\u4EAB7\u00D724\u5C0F\u65F6\u7684\u5168\u5929\u5019\u670D\u52A1\u3002",
+                            "ico": "bizopt",
+                            "id": 1,
+                            "t": ""
+                        },
+                        "stype": 2,
+                        "tc": 99,
+                        "tgq": {
+                            "edn": "\u4E0D\u5F97\u7B7E\u8F6C\u3002",
+                            "rfn": "\u8D77\u98DE\uFF08\u542B\uFF09\u524D\u9700\u6536\u53D6\u7968\u9762\u4EF750\uFF05\u7684\u9000\u7968\u8D39\uFF0C\u8D77\u98DE\u540E\u4E0D\u5F97\u9000\u7968\u3002",
+                            "rmk": "",
+                            "rrn": "\u8D77\u98DE\uFF08\u542B\uFF09\u524D\u540C\u7B49\u8231\u4F4D\u66F4\u6539\u9700\u6536\u53D6\u7968\u9762\u4EF730\uFF05\u7684\u66F4\u6539\u8D39\uFF0C\u8D77\u98DE\u540E\u9700\u6536\u53D6\u7968\u9762\u4EF750\uFF05\u7684\u66F4\u6539\u8D39\u3002\u6539\u671F\u8D39\u4E0E\u7968\u4EF7\u5DEE\u989D\u540C\u65F6\u53D1\u751F\u65F6\uFF0C\u4E24\u8005\u9700\u540C\u65F6\u6536\u53D6\u3002",
+                            "t": "allowed"
+                        },
+                        "ts": 0,
+                        "ukey": "NormalS005290.432",
+                        "wname": "4.30\u6298\u7ECF\u6D4E\u8231"
+                    }],
+                    "idx": 1,
+                    "istr": false,
+                    "maxc": 0,
+                    "minp": 529,
+                    "num": 0,
+                    "ofee": 0,
+                    "segs": [{
+                        "ac": "SHA",
+                        "acn": "\u4E0A\u6D77",
+                        "aport": "CA",
+                        "aportn": "\u6D66\u4E1C\u56FD\u9645\u673A\u573A",
+                        "atime": "2016-12-10 22:35",
+                        "atml": "T2",
+                        "corp": "CA",
+                        "corpn": "\u4E2D\u56FD\u56FD\u822A",
+                        "dc": "BJS",
+                        "dcn": "\u5317\u4EAC",
+                        "dport": "PEK",
+                        "dportn": "\u9996\u90FD\u56FD\u9645\u673A\u573A",
+                        "dtime": "2016-12-10 20:20",
+                        "dtml": "T3",
+                        "fltno": "CA1883",
+                        "fsdes": "",
+                        "ftime": 0,
+                        "idx": 0,
+                        "meat": false,
+                        "ofee": 0,
+                        "on": 0,
+                        "pk": "L",
+                        "plane": "330",
+                        "stop": 0,
+                        "tax": 50
+                    }],
+                    "tax": 50
+                }],
+                "supportCertiticateType": {
+                    "0": "\u8EAB\u4EFD\u8BC1",
+                    "1": "\u519B\u5B98\u8BC1",
+                    "2": "\u56DE\u4E61\u8BC1",
+                    "3": "\u6E2F\u6FB3\u901A\u884C\u8BC1",
+                    "4": "\u62A4\u7167",
+                    "7": "\u53F0\u80DE\u8BC1"
+                },
+                "supportPassengerType": {
+                    "0": "\u6210\u4EBA",
+                    "1": "\u513F\u7AE5(1-12\u5C81)"
+                },
+                "ticketAmountInfo": {
+                    "adultAmount": 529,
+                    "adultFee": 50,
+                    "adultLegislationAmount": 0,
+                    "childAmount": 260,
+                    "childFee": 0,
+                    "infantAmount": 0,
+                    "infantFee": 0,
+                    "integraAmount": 0,
+                    "serverTime": "2016-12-09"
+                },
+                "tourPackageInfos": [],
+                "xpromotionSearchViewInfo": {
+                    "backXpackids": [null],
+                    "xpackidStr": "0",
+                    "xpackids": ["0"]
+                }
+            },
+            assistViewInfo: {
+                "expressInvoiceSwitch": false,
+                "selectAgainUrl": "\/jbook\/bjs-sha?departdate=2016-12-10&seatlevel=y&refresh=1"
+            },
+            jsTips: {
+                "js_NoMailName": "\u8BF7\u8F93\u5165\u6536\u4EF6\u4EBA\u59D3\u540D",
+                "js_LoginName": "\u8BF7\u8F93\u5165\u90AE\u7BB1\u6216\u624B\u673A\u53F7",
+                "js_TicketCountLimit": "\u60A8\u9009\u62E9\u7684\u8231\u4F4D\u73B0\u5269{0}\u5F20\u7968\uFF0C\u4E3A\u66F4\u591A\u4E58\u5BA2\u9884\u8BA2\u673A\u7968\u8BF7\u9009\u62E9\u5176\u4ED6\u8231\u4F4D\u6216\u5206\u5F00\u9884\u8BA2 &lt;a href=\"{1}\"&gt;\u91CD\u9009\u822A\u73ED&lt;\/a&gt;",
+                "passenger_Child": "\u6E29\u99A8\u63D0\u793A\uFF1A\u8BF7\u786E\u4FDD\u6B64\u513F\u7AE5\u5E74\u9F84\u57282-12\u5468\u5C81\u3002",
+                "js_PassengerBirthday": "\u8BF7\u8F93\u5165\u751F\u65E5\uFF0C\u683C\u5F0F\u4E3Ayyyy-mm-dd",
+                "js_PassengerNameDuplicate": "\u591A\u4E2A\u4E58\u673A\u4EBA\u7684\u59D3\u540D\u4E0D\u80FD\u91CD\u590D\uFF0C\u8BF7\u91CD\u65B0\u8F93\u5165",
+                "js_PassengerNameCN": "\u8BF7\u8F93\u5165\u6C49\u5B57",
+                "oneHourFlightTip": "\u8BF7\u5728\u8D77\u98DE\u524D1\u5C0F\u65F6\u5B8C\u6210\u9884\u8BA2\uFF0C\u53EA\u63A5\u53D7\u56FD\u5185\u4FE1\u7528\u5361\u652F\u4ED8\u3002",
+                "js_ChildNameEnLimit": "\u513F\u7AE5\u59D3\u540D\u4E0D\u80FD\u8D85\u8FC724\u4E2A\u5B57\u7B26",
+                "js_MailAddressLength": "\u60A8\u8F93\u5165\u7684\u5185\u5BB9\u5C11\u4E8E8\u4E2A\u5B57\u7B26",
+                "js_NoPayment": "\u8BF7\u9009\u62E9\u4E00\u79CD\u652F\u4ED8\u65B9\u5F0F",
+                "js_PassengerInFantTip": "\u8BF7\u786E\u4FDD\u5728\u8D77\u98DE\u4E4B\u65E5,\u6B64\u5A74\u513F\u4E58\u5BA2\u7684\u5E74\u9F84\u57280-2\u5468\u5C81,\u4EE5\u514D\u5F71\u54CD\u767B\u673A\u3002",
+                "js_NoZipcode": "\u8BF7\u8F93\u5165\u4E0E\u6536\u4EF6\u4EBA\u5730\u5740\u76F8\u5339\u914D\u7684\u90AE\u653F\u7F16\u7801",
+                "js_PassengerInsuranceDate": "\u8BF7\u586B\u5199\u751F\u65E5",
+                "js_AdultNameLimit": "\u6210\u4EBA\u59D3\u540D\u4E0D\u80FD\u8D85\u8FC710\u4E2A\u6C49\u5B57",
+                "passenger_Infant": "\u6E29\u99A8\u63D0\u793A\uFF1A\u5A74\u513F\u59D3\u540D\u9700\u4E0E\u767B\u673A\u6240\u6301\u51FA\u751F\u8BC1\u3001\u6237\u53E3\u672C\u6216\u62A4\u7167\u4E00\u81F4\uFF1B\u4E2D\u6587\u59D3\u540D\u4E58\u5BA2\u8BF7\u540C\u65F6\u5728\u82F1\u6587\u59D3\u540D\u5904\u586B\u5199\u62FC\u97F3\u3002\u65E0\u4E2D\u6587\u59D3\u540D\uFF0C\u5219\u53EA\u8F93\u5165\u82F1\u6587\u59D3\u540D \uFF08\u683C\u5F0F\uFF1A\u201CSmith\/John\u201D\uFF09",
+                "js_NoMailPhone": "\u8BF7\u8F93\u5165\u6709\u6548\u624B\u673A\u53F7\u7801\uFF0C\u5E76\u4FDD\u6301\u901A\u8BAF\u72B6\u6001\uFF01",
+                "js_ContactFax": "\u60A8\u8F93\u5165\u7684\u4F20\u771F\u53F7\u7801\u6709\u8BEF\uFF0C\u8BF7\u7559\u4E0B\u6B63\u786E\u7684\u53F7\u7801\uFF0C\u4EE5\u4FBF\u8054\u7CFB\uFF0C\u4F20\u771F\u53F7\u7801\u683C\u5F0F\u5982\uFF1A86-10-1234567\u6216010-1234567\uFF01",
+                "js_PassengerCertificateToTibet": "\u975E\u5E38\u62B1\u6B49\uFF0C\u6839\u636E\u76F8\u5173\u89C4\u5B9A\uFF0C\u6301\u975E\u5927\u9646\u8EAB\u4EFD\u8BC1\u767B\u673A\u7684\u5BA2\u4EBA\uFF0C\u9700\u8981\u5230\u822A\u7A7A\u516C\u53F8\u8D2D\u4E70\u673A\u7968",
+                "js_NoLoginName": "\u8BF7\u586B\u5199\u767B\u5F55\u540D\u79F0\uFF01",
+                "deliveryPickup": "\u7D22\u53D6\u62A5\u9500\u51ED\u8BC1\uFF0C\u4E0D\u80FD\u665A\u4E8E\u822A\u73ED\u8D77\u98DE5\u5929\u540E\uFF0C\u903E\u671F\u53EA\u63D0\u4F9B\u51FA\u7968\u8BC1\u660E\u3002",
+                "restroom-InventoryEx": "\u4F11\u606F\u5BA4\u5E93\u5B58\u4E0D\u8DB3\uFF0C\u8BF7\u91CD\u65B0\u9009\u62E9\uFF01",
+                "js_NotUsable": "\u79EF\u5206\u4F59\u989D\u4E0D\u8DB3\uFF01",
+                "js_LoginPWD": "\u8BF7\u8F93\u5165\u5BC6\u7801",
+                "js_ChildNameLimit": "\u513F\u7AE5\u59D3\u540D\u4E0D\u80FD\u8D85\u8FC710\u4E2A\u6C49\u5B57\uFF0C\u4E0D\u5C11\u4E8E2\u4E2A\u6C49\u5B57",
+                "js_ContactPhone": "\u60A8\u8F93\u5165\u7684\u7535\u8BDD\u53F7\u7801\u6709\u8BEF\uFF0C\u8BF7\u7559\u4E0B\u6B63\u786E\u7684\u53F7\u7801\uFF0C\u4EE5\u4FBF\u8054\u7CFB\uFF0C\u7535\u8BDD\u53F7\u7801\u683C\u5F0F\u5982\uFF1A86-10-1234567\u6216010-1234567\uFF01",
+                "js_PassengerEmptyName": "\u59D3\u540D\u4E0D\u80FD\u4E3A\u7A7A\uFF0C\u82F1\u6587\u4E58\u673A\u4EBA\u59D3\u540D\u95F4\u5FC5\u987B\u7528'\/'\u7B26\u53F7\u5206\u9694\uFF0C\u59D3\u5728\u524D\u540D\u5728\u540E",
+                "js_NoInvoiceTitle": "\u8BF7\u8F93\u5165\u6B63\u786E\u7684\u53D1\u7968\u62AC\u5934\uFF0C\u5730\u5740\u4E2D\u4E0D\u80FD\u51FA\u73B0\u7A7A\u683C\u548C\u6807\u70B9\u7B26\u53F7\uFF1B\u4E0D\u53EF\u5305\u542B#*&amp;\u7B49\u7279\u6B8A\u5B57\u7B26",
+                "js_NoSupportDelivery": "\u60A8\u7684\u652F\u4ED8\u65B9\u5F0F\u4E0D\u652F\u6301\u6240\u9009\u62E9\u7684\u914D\u9001\u65B9\u5F0F",
+                "js_PassengerAirCardRule": "\u4E24\u4E2A\u4E58\u673A\u4EBA\u5E38\u65C5\u5BA2\u5361\u76F8\u540C",
+                "js_PassengerChildTip": "\u8BF7\u786E\u4FDD\u5728\u8D77\u98DE\u4E4B\u65E5,\u6B64\u513F\u7AE5\u4E58\u5BA2\u7684\u5E74\u9F84\u57282-12\u5468\u5C81,\u4EE5\u514D\u5F71\u54CD\u767B\u673A\u3002",
+                "js_LoginNameFreezing": "\u7528\u6237\u5DF2\u7ECF\u88AB\u51BB\u7ED3\u6216\u53D6\u6D88",
+                "js_ContactName": "\u59D3\u540D\u4E0D\u80FD\u4E3A\u7A7A\u3001\u4E0D\u80FD\u5305\u542B\u6570\u5B57\u4E0E\u7B26\u53F7\uFF0C\u8BF7\u91CD\u65B0\u8F93\u5165\uFF01",
+                "js_PassengerAdultTip": "\u8BF7\u786E\u4FDD\u5728\u8D77\u98DE\u4E4B\u65E5,\u6B64\u6210\u4EBA\u4E58\u5BA2\u7684\u5E74\u9F84\u5927\u4E8E12\u5468\u5C81,\u4EE5\u514D\u5F71\u54CD\u767B\u673A\uFF0C\u683C\u5F0F\u4E3Ayyyy-mm-dd",
+                "js_LoginOtherError": "\u672A\u77E5\u9519\u8BEF",
+                "js_InfantNameLimit": "\u5A74\u513F\u59D3\u540D\u4E0D\u80FD\u8D85\u8FC78\u4E2A\u6C49\u5B57\uFF0C\u4E0D\u5C11\u4E8E2\u4E2A\u6C49\u5B57",
+                "js_LoginVCodeError": "\u9A8C\u8BC1\u7801\u8F93\u5165\u6709\u8BEF",
+                "passenger_Infant_Tip": "\u63D0\u793A\uFF1A\u59D3\u540D\u548C\u767B\u673A\u6240\u6301\u51FA\u751F\u8BC1\u3001\u6237\u53E3\u672C\u6216\u62A4\u7167\u4E00\u81F4\uFF0C\u8D77\u98DE\u65E5\u5A74\u513F\u5E74\u9F84\u4E0D\u5927\u4E8E24\u4E2A\u6708\u3002\u4E2D\u6587\u59D3\u540D\u4E58\u5BA2\u8BF7\u540C\u65F6\u5728\u82F1\u6587\u59D3\u540D\u5904\u586B\u5199\u62FC\u97F3\u3002\u62FC\u97F3\u548C\u82F1\u6587\u59D3\u540D\u683C\u5F0F\u5982\uFF1A\u201Czhang\/san\u201D\u3002",
+                "js_AdultNameEnLimit": "\u6210\u4EBA\u59D3\u540D\u4E0D\u80FD\u8D85\u8FC710\u4E2A\u6C49\u5B57\uFF0C\u4E0D\u5C11\u4E8E2\u4E2A\u6C49\u5B57",
+                "specialTicketDelivery": "\u672C\u7968\u9001\u7968\u548C\u81EA\u53D6\u4EC5\u9650{ISSUECITY}\u3002\u5176\u5B83\u5730\u533A\u53EA\u80FD\u9009\u62E9\u4FE1\u7528\u5361\u7B49\u9884\u4ED8\u65B9\u5F0F\uFF0C\u4E0D\u8981\u884C\u7A0B\u5355\u6216\u9001\u7968\u4E0A\u95E8\uFF085\u65E5\u9001\u8FBE\uFF09\u884C\u7A0B\u5355\u3002",
+                "js_InfantNameEnLimit": "\u5A74\u513F\u59D3\u540D\u4E0D\u80FD\u8D85\u8FC717\u4E2A\u5B57\u7B26",
+                "js_FreeTicketCountLimit": "\u60A8\u9884\u8BA2\u7684\u673A\u7968\u5DF2\u552E\u5B8C\uFF0C\u8BF7\u91CD\u65B0\u9009\u62E9\u5176\u4ED6\u8231\u4F4D\u6216\u822A\u73ED\u9884\u8BA2\u3002 &lt;a href=\"{0}\"&gt;\u91CD\u9009\u822A\u73ED&lt;\/a&gt;\u70B9\u51FB\u91CD\u65B0\u9009\u62E9\u540E\u8FD4\u56DE\u641C\u7D22\u5217\u8868\u9875",
+                "js_PassengerCertificateRule": "\u4E24\u4E2A\u4E58\u673A\u4EBA\uFF0C\u8BC1\u4EF6\u7C7B\u578B\u3001\u53F7\u7801\u5747\u76F8\u540C",
+                "js_PassengerCertificateNO": "\u8BF7\u8F93\u5165\u6B63\u786E\u7684\u8BC1\u4EF6\u53F7",
+                "js_NoMailAddress": "\u8BF7\u8F93\u5165\u6B63\u786E\u7684\u6536\u4EF6\u4EBA\u5730\u5740\uFF0C\u5730\u5740\u4E2D\u4E0D\u80FD\u51FA\u73B0\u7A7A\u683C\u548C\u6807\u70B9\u7B26\u53F7\uFF1B\u4E0D\u53EF\u5305\u542B#*&amp;\u7B49\u7279\u6B8A\u5B57\u7B26",
+                "passenger_Child_Tip": "\u63D0\u793A\uFF1A\u8BF7\u786E\u4FDD\u5728\u8D77\u98DE\u4E4B\u65E5,\u6B64\u513F\u7AE5\u4E58\u5BA2\u7684\u5E74\u9F84\u57282-12\u5468\u5C81,\u4EE5\u514D\u5F71\u54CD\u767B\u673A\u3002",
+                "js_PassengerInsurance": "\u4E58\u673A\u4EBA\u6700\u591A\u53EF\u8D2D\u4E70{MAX}\u4EFD\u4FDD\u9669",
+                "js_ContactMobile": "\u60A8\u8F93\u5165\u7684\u624B\u673A\u53F7\u7801\u6709\u8BEF\uFF0C\u8BF7\u91CD\u65B0\u8F93\u5165\u3002",
+                "createOrder_Repeat_Error": "&lt;div class=\"payment_tip pt20\"&gt;&lt;h2&gt;&lt;tt&gt;&lt;\/tt&gt;\u60A8\u5DF2\u6709\u4E00\u5F20\u76F8\u540C\u8BA2\u5355(\u8BA2\u5355\u53F7\uFF1A{0})\uFF0C\u8BF7\u52FF\u91CD\u590D\u4E0B\u5355\u3002\u70B9\u51FB&lt;a href=\"{1}\"&gt;\"\u67E5\u770B\u8BA2\u5355\"&lt;\/a&gt;\u8FDB\u5165\u8BA2\u5355\u8BE6\u60C5\u9875&lt;\/h2&gt;&lt;p class=\"tc\"&gt;&lt;a href=\"#?\" class=\"btn\"&gt;\u6211\u77E5\u9053\u4E86&lt;\/a&gt;&lt;\/p&gt;&lt;a href=\"#?\" class=\"tip_close\"&gt;&lt;\/a&gt;&lt;\/div&gt;",
+                "js_ContactEmail": "\u8BF7\u8F93\u5165\u6B63\u786E\u7684\u7535\u5B50\u90AE\u7BB1\u5730\u5740\uFF0C\u683C\u5F0F\u4E3A\uFF1Axxx@xxx.xxx\uFF01",
+                "travelSky_Tip": "\u6210\u529F\u8D2D\u7968\u65E5\u81F3\u822A\u73ED\u8D77\u98DE\u540E5\u5929\u7D22\u53D6\u62A5\u9500\u51ED\u8BC1\uFF0C\u903E\u671F\u53EA\u63D0\u4F9B\u51FA\u7968\u8BC1\u660E\u3002",
+                "js_PassengerNameLimit": "\u4E58\u673A\u4EBA\u59D3\u540D\u8FC7\u957F",
+                "js_LoginNameNotExist": "\u7528\u6237\u540D\u6216\u5BC6\u7801\u8F93\u5165\u6709\u8BEF&lt;br&gt;&lt;a class='ml15' rel='nofollow' href='#?' method='forgotpass'&gt;\u5FD8\u8BB0\u5BC6\u7801?&lt;\/a&gt;",
+                "js_NoProvince": "\u8BF7\u9009\u62E9\u7701\u4EFD\u3001\u57CE\u5E02\u3001\u5730\u533A\u4FE1\u606F",
+                "js_PassengerAirCard": "\u5E38\u65C5\u5BA2\u5361\u53F7\u7801\u53EA\u9700\u8981\u8F93\u5165\u6570\u5B57\u90E8\u5206\uFF0C\u5B57\u7B26\u4E0D\u7528\u8F93\u5165\u3002",
+                "js_PassengerAdultLimit": "\u4E0D\u80FD\u5355\u72EC\u9884\u8BA2\u5A74\u513F\u3001\u513F\u7AE5\u7968\uFF0C&lt;br\/&gt;\u4E58\u673A\u4EBA\u81F3\u5C11\u4E00\u4E2A\u662F\u6210\u4EBA",
+                "js_PassengerIDNo": "\u8BF7\u8F93\u5165\u6B63\u786E\u7684\u8EAB\u4EFD\u8BC1\u53F7",
+                "js_PassengerName": "\u8BF7\u6B63\u786E\u8F93\u5165\u59D3\u540D\uFF0C\u59D3\u540D\u4E0D\u80FD\u4E3A\u7A7A\u3001\u4E0D\u80FD\u5305\u542B\u6570\u5B57\u4E0E\u7B26\u53F7\u3002&lt;br\/&gt;\u82F1\u6587\u59D3\u540D\u8F93\u5165\u683C\u5F0F\u4E3A\uFF1A\u59D3\/\u540D\uFF0C\u59D3\u4E0E\u540D\u4E4B\u95F4\u5FC5\u987B\u7528'\/'\u7B26\u53F7\u5206\u9694\uFF0C\u5982\u201CSmith\/David\u201D\u3002",
+                "js_NoPkTime": "\u8BF7\u9009\u62E9\u53D6\u7968\u65F6\u95F4",
+                "js_PassengerAdultChildInfant": "\u60A8\u9009\u62E9\u7684\u822A\u7A7A\u516C\u53F8\u89C4\u5B9A\uFF1A1\u4E2A\u6210\u4EBA\u6700\u591A\u53EA\u80FD\u5E26#{child}\u540D\u513F\u7AE5\u548C#{infant}\u540D\u5A74\u513F\uFF1B\u66F4\u591A\u513F\u7AE5\u3001\u5A74\u513F\uFF0C\u8BF7\u76F4\u63A5\u8054\u7CFB\u822A\u7A7A\u516C\u53F8\u9884\u8BA2\u3002",
+                "passengerGB2312ErrorMessage": "\u59D3\u540D\u4E2D\u542B\u6709\u751F\u50FB\u5B57\uFF0C\u8BF7\u6309\u6B63\u786E\u683C\u5F0F\u8F93\u5165\uFF1A&lt;br\/&gt;1.\u5F53\u201C\u59D3\u201D\u4E3A\u751F\u50FB\u5B57\u65F6\uFF0C\u5982\uFF1A\u201C\u7B19\u4E4B\u4E00\u201D\uFF0C\u8F93\u5165\uFF1Asheng\/zhiyi\uFF1B&lt;br\/&gt;2.\u5F53\u201C\u540D\u201D\u4E3A\u751F\u50FB\u5B57\u65F6\uFF0C\u5982\u201C\u738B\u7B19\u4E4B\u201D\uFF0C\u8F93\u5165\uFF1A\u738Bshengzhi\uFF1B\u201C\u738B\u4E4B\u7B19\u201D\uFF0C\u8F93\u5165\uFF1A\u201C\u738B\u4E4Bsheng\u201D\u3002"
+            },
+            passengerRule: {
+                "adultNum": 1,
+                "childNum": 2,
+                "infantNum": 1
+            },
+            urlVersion: "20161209153700",
+            jsPath: "..\/..\/..\/web\/flight\/",
+            basePath: "",
+            curDate: "2016-12-09"
+        };
+        var pageController = FillOrderController;
+    </script>
+
+    <div id="m_adsContainer" style="display:none"></div>
+    <div style='position: absolute; top: 0px; left: 0px; z-index: 100; height: 1px; width: 1px; overflow: hidden; visibility: hidden;'>
+        <script type="text/javascript" src="http://www.elongstatic.com/common/js/noexpire/s_code.js?20161209153700"></script>
+        <script language="JavaScript">
+            var s_code = s.t();
+            if (s_code) document.write(s_code);
+        </script>
+        <noscript>
+             <img src="http://elongcom.122.2O7.net/b/ss/elongcom/1/H.1--NS/0" height="1" width="1"
+                 border="0" alt="" /></noscript>
+    </div>
+
+    <script data-main="../flight/src/js/book/order.js?20161208141950" src=".http://m.elongstatic.com/web/flight/2016/12/v1/common/require.js?20161208141950"></script>
+</body>
+
+</html>
